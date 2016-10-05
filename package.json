@@ -1,6 +1,6 @@
 {
   "name": "whoru-cli",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Simple cli to whoru",
   "bin": {
     "whoru": "./bin/cli.js"
@@ -10,7 +10,7 @@
     "complete": "^0.4.4",
     "pouchdb": "^5.1.0",
     "rc": "^1.1.6",
-    "whoru": "^2.0.1"
+    "whoru": "^2.1.0"
   },
   "devDependencies": {
     "standard": "^4.5.4"

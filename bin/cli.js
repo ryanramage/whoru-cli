@@ -67,8 +67,13 @@ if (call === 'similarFingerprints' && args.length !== 1) {
   return console.log('whoru similarFingerprints <fingerprint>')
 }
 
+if (call === 'personFingerprints' && args.length !== 1) {
+  console.log('similarFingerprints requires 1 parameters, try:')
+  return console.log('whoru personFingerprints <person_id>')
+}
+
 var cb = function (err, results) {
-  if (err) return console.log('ERROR', err)
+  if (err) return console.log('ERROR', JSON.stringify(err))
   try {
     console.log(JSON.stringify(results))
   } catch (e) {
